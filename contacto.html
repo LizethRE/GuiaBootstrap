@@ -1,0 +1,34 @@
+<section>
+    <div class="container">
+        <br></br>
+        <div class="container contacto">
+            <form role="form" id="Formulario" method="post">
+                <h1>Formulario de Contacto</h1>
+                <hr></hr>
+                <p align="right">
+                <span class="required_notification" style="color: red;">* Datos requeridos</span>
+                </p>
+                <div class="form-group">
+                    <label class="control-label" for="Nombre">Nombre</label>
+                    <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Carlos Rosendo Gutierrez" />
+                </div>  
+                <div class="form-group">
+                    <label class="control-label" for="Correo">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="Correo" name="Correo" placeholder="nombre@algo.com"/>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="Nombre">Sitio Web</label>
+                    <input type="url" class="form-control" id="SitioW" name="SitioW" placeholder="http://algo.com"/>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="Mensaje">Mensaje</label>
+                    <textarea rows="5" cols="30" class="form-control" id="Mensaje" name="Mensaje" placeholder="Mensaje"></textarea>
+                </div>
+                <div class="form-group">                
+                    <input type="submit" class="btn btn-success" value="Enviar Mensaje"></input>            
+                </div>
+                <div id="respuesta" style="display: none;"></div>
+            </form>
+        </div>       
+    </div>
+</section>

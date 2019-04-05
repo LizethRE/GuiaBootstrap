@@ -1,0 +1,102 @@
+/* === Form Typography === */
+body {
+	font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+.navbar-header img{
+	height: 30px;
+}
+
+picture img{
+	width: 170%;
+}
+
+.container{
+	margin-left: 0px;
+}
+
+.footer{
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	background-color: #f5f5f5;
+	text-align: center;
+	padding-top: 16px;
+}
+
+
+/* === Remove input autofocus webkit === */
+*:focus {
+	outline: none;
+}
+
+.contact_form h2, .contact_form label {
+	font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.form_hint, .required_notification {
+	font-size: 11px;
+}
+
+/* === List Styles === */
+.contact_form ul {
+	width: 750px;
+	list-style-type: none;
+ 	list-style-position: outside;
+ 	margin: 0px;
+ 	padding: 0px;
+}
+
+.contact_form li {
+ 	padding: 12px;
+ 	border-bottom: 1px solid #eee;
+ 	position: relative;
+}
+
+.contact_form li:first-child, .contact_form li:last-child {
+ 	border-bottom: 1px solid #777;
+} 
+
+.imgseleccion{
+	width: 100%;
+}
+
+.par{
+	margin: 2em;
+}
+
+.hamburguer{
+	display: none;
+}
+
+/* === HTML5 validation styles === */
+.contacto input:required, .contacto textarea:required {
+ 	background: #fff url(images/red_asterisk.png) no-repeat 98% center;
+ }
+
+ .contacto input:required:valid, .contacto textarea:required:valid {
+ 	background: #fff url(images/valid.png) no-repeat 98% center;
+ 	box-shadow: 0 0 5px #5cd053;
+ 	border-color: #28921f;
+ }
+
+ .contacto input:focus:invalid, .contactotextarea:focus:invalid {
+ 	background: #fff url(images/invalid.png) no-repeat 98% center;
+ 	box-shadow: 0 0 5px #d45252;
+ 	border-color: #b03535;
+ } 
+
+/**Responsive**/
+@media screen and (max-width:800px) {
+	picture img{
+		width: 100%;
+	}
+	.hamburguer{
+		margin:1.5%;
+		display: block;
+		float: right;
+	}
+	.hamburguer span{
+		font-size: 25px;
+	}
+}
